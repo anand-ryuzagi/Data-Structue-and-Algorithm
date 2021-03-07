@@ -1,4 +1,5 @@
-#time complexity = O(n)
+#time complexity = O(n*d)
+#space complexity = O(d)
 
 def rotate(arr,n,d):
     for i in range(d):

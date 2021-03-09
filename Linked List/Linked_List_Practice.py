@@ -43,10 +43,13 @@ class LinkedList:
             self.insert(members)
     
     def deleteAT(self,index):
-        n = self.head
-        for i in range(index-1):
-            n = n.next
-        n.next = n.next.next
+        if(index == 0):
+            self.head = self.head.next
+        else:
+            n = self.head
+            for i in range(index-1):
+                n = n.next
+            n.next = n.next.next
 
     def getLength(self):
         count = 0

@@ -10,7 +10,7 @@
 # repeat all above until the values sorted correctly.
 
 def selectionSort(arr,size):
-    for i in range(size):
+    for i in range(size-1):
         for j in range(i+1,size):
             if(arr[i]>arr[j]):
                 temp =arr[i]

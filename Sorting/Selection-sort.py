@@ -1,4 +1,7 @@
 # Selection sort : Select a position and compare all the values for its best suitable value
+#time complexity : O(n^2)
+#space complexity : O(n)
+#Auxiliary space complexity : O(1), hence it is called in-place sorting algorithm
 
 # Algorithm:
 # select a index i

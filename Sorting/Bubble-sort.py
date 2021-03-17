@@ -1,4 +1,7 @@
 # Bubble sort : It is like a air bubble in the water in which the larger bubble rises first and the smaller one will follow it and as the largest bubble reaches the end it pop out.
+#Time complexity : O(n^2)
+#Space complexity : O(n)
+#Auxiliary space complexity: O(1), hence it is called in-place sorting
 
 # Algorithm
 # the outer loop iterate equal to the number of elements in the array
@@ -6,7 +9,7 @@
 # in inner loop continuously adjacent values are compared and if there is the first value is larger than second then the values are swapped
 
 
-def selectionSort(arr,size):
+def bubbleSort(arr,size):
     flag = False
     for i in range(size-1):
         for j in range(size-1-i):

@@ -6,7 +6,7 @@
 
 from queue import Queue
 
-class DepthFirstSearch:
+class BreadthFirstSearch:
     def __init__(self,adj_list):
         self.adj_list = adj_list
         self.status = {}
@@ -17,7 +17,7 @@ class DepthFirstSearch:
             self.status[vertices] = 0
             self.parent[vertices] = None
 
-    def dfsTransverse(self,source):
+    def bfsTransverse(self,source):
         self.status[source] = 1
         self.parent[source] = None
         self.queue.put(source)
@@ -36,7 +36,7 @@ class DepthFirstSearch:
                 
         return False
         
-        print(self.final_output)
+
     
 
 
@@ -48,8 +48,8 @@ if __name__ == '__main__':
     3:[1,2,4],
     4:[2,3]
     }
-    graph = DepthFirstSearch(adj_list)
-    if(graph.dfsTransverse(0)): print("cycle is present")
+    graph = BreadthFirstSearch(adj_list)
+    if(graph.bfsTransverse(0)): print("cycle is present")
     else: print("Not a cycle")
 
     adj_list2 ={
@@ -60,6 +60,6 @@ if __name__ == '__main__':
         5:[4,6],
         6:[5]
     }
-    graph2 = DepthFirstSearch(adj_list2)
-    if(graph.dfsTransverse(1)): print("cycle is present")
+    graph2 = BreadthFirstSearch(adj_list2)
+    if(graph.bfsTransverse(1)): print("cycle is present")
     else: print("Not a cycle")
